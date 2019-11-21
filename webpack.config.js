@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
-  mode: process.env.NODE_ENV == 'production' ? 'production' : 'development',
+  mode: 'production',
   entry: {
     index: './src/js/index.js',
   },
@@ -12,7 +12,7 @@ const config = {
     filename: 'js/[name].min.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: process.env.NODE_ENV == 'production' ? undefined : 'source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: './dist',
   },
