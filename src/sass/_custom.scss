@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$body-color: #051827;
+$as-primary: rgb(63,255,207);
+$as-secondary: rgb(210, 233, 233);
+
+$as-tint-product: #ffd0d0ff;
+$as-tint-hero: #a1f7ffff;
+$as-tint-guardian: #fbdfbbff;
+
+$theme-colors: (
+  "dark": $body-color,
+  "primary": $as-primary,
+  "secondary": $as-secondary
+);
