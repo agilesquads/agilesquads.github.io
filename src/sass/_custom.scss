@@ -3,6 +3,7 @@
 $body-color: #051827;
 $as-primary: rgb(63,255,207);
 $as-secondary: rgb(210, 233, 233);
+$as-tetriary: #092d48;
 
 $as-tint-product: #ffd0d0ff;
 $as-tint-hero: #a1f7ffff;
@@ -11,5 +12,16 @@ $as-tint-guardian: #fbdfbbff;
 $theme-colors: (
   "dark": $body-color,
   "primary": $as-primary,
-  "secondary": $as-secondary
+  "secondary": $as-secondary,
+  "tetriary": $as-tetriary
+);
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    6: ($spacer * 5),
+    7: ($spacer * 10)
+  ),
+  $spacers
 );
