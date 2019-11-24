@@ -20,6 +20,12 @@ body {
   flex: 0 0 128px;
 }
 
+.as-about {
+  background: linear-gradient(177deg, transparent 80%, $as-tetriary 60%)
+}
+.as-summary {
+  background: linear-gradient(-177deg, $as-tetriary 97%, transparent 10%)
+}
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25% !important;
@@ -158,4 +164,38 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.c-timeline {
+  padding-left: 3rem;
+  @media (min-width: 576px) {
+    padding-left: 5rem;
+  }
+  padding-top: 30px;
+  &::before {
+    left: 1.5rem;
+    content: '';
+    position: absolute;
+    height: calc(100% - 4rem);
+    width: .1rem;
+    background: $as-primary;
+  }
+}
+
+.c-timeline__item {
+  position: relative;
+  &::before {
+    left: -1.16rem;
+    @media (min-width: 576px) {
+      left: -3.2rem;
+    }
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: $as-tetriary;
+    border: .1rem solid $as-primary;
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 0.4rem;
+  }
 }
