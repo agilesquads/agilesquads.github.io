@@ -3,9 +3,9 @@
 # Agile Squads
 ## The liberating agile framework for mature software teams
 
-This is the source code of the website https://agilesquads.github.io.
+This is the source code of the website https://agilesquads.org
 
-Click [here](https://agilesquads.github.io) to view the framework.
+Click [here](https://agilesquads.org) to view the framework.
 
 ## Running it locally
 
