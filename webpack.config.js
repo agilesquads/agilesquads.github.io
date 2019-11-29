@@ -15,6 +15,7 @@ const config = {
   output: {
     filename: 'js/[name].min.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
   },
   devtool: 'source-map',
   devServer: {
@@ -59,6 +60,10 @@ const config = {
     new webpack.ProgressPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({template: './src/html/index.html'}),
+    new HtmlWebpackPlugin({
+      template: './src/html/outcome-vs-output.html',
+      filename: 'outcome-vs-output/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
