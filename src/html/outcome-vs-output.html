@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | Outcome vs Output</title>
+
+  <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+</head>
+<body class="text-secondary">
+
+  <%= require('html-loader!./partials/navigation.html') %>
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <header class="text-center text-white">
+      <h1 class="display-4 text-primary">Outcome vs Output</h1>
+    </header>
+
+    <div class="row py-5">
+      <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+        <h1>Preface</h1>
+        <p class="font-weight-light">
+          What are the KPIs we should measure for a team to be considered successful?
+          We usually fall in the trap of measuring how fast a team delivers features,
+          often called team velocity, but at the end of the day, does it really matter when a team releases functionality
+          that nobody uses? This is an example of what differentiates an output versus an outcome.
+        </p>
+        <p class="font-weight-light">
+          For a company to be succesful, what matters is the measurable outcome of an effort, and for a team
+          to get there, it is important for this to have been defined from the beginning. One way to achieve this
+          is to set the expectations of Minimum Viable Products (MVP) and in the agile world, functionality is built
+          upon MVPs in order to test the waters and iterate, either by shifting direction, adding functionality or abandoning
+          a plan.
+        </p>
+
+        <h1>Minimum Viable Products</h1>
+        <p class="font-weight-light">
+          When the Product Squad is shaping up Missions, it is important to set some expectations in terms of Return-Of-Investment (ROI).
+          When defining MVPs, they should be clear what is the expected outcome, which usually falls into one of the
+          three categories below.
+        </p>
+        <h4 class="text-primary">The Succesful MVP</h4>
+        <p class="font-weight-light">
+          When is team is working on successful MVPs, they put their efforts by defining an expected ROI, such
+          as revenue or customer retention. They communicate with customers, understand their needs, they probe
+          the market and they put the effort required to make this a successful journey.
+        </p>
+        <h4 class="text-primary">The Probe MVP</h4>
+        <p class="font-weight-light">
+          Sometimes it is important to test the waters and learn. These are experiments, usually short in effort
+          in order to gather early feedback, understand the userbase or check if an idea could have the potential
+          to take off.
+        </p>
+        <h4 class="text-primary">The Bad MVP</h4>
+        <p class="font-weight-light">
+          This is the worst case scenario, where a deadline is put in place, and the team delivers an output. It is
+          the place where bugs, technical debt and low quality are borned.
+        </p>
+
+        <h1>Examples</h1>
+        <p class="font-weight-light">
+          This is a list of examples that differentiates an outcome vs an output.
+        </p>
+
+        <div class="row lead my-5">
+          <div class="col-6 text-success text-right">
+            <h2>Outcome</h2>
+            <ul class="list-unstyled">
+              <li>A goal was met</li>
+              <li>A hypothesis was validated</li>
+              <li>An investment was returned</li>
+              <li>Customer retention was improved</li>
+              <li>A feature is used by X customers</li>
+            </ul>
+          </div>
+          <div class="col-6 text-danger text-left">
+            <h2>Output</h2>
+            <ul class="list-unstyled">
+              <li>Developers built a feature</li>
+              <li>Team velocity increased</li>
+              <li>Release cycle time increased</li>
+              <li>Kanban flow reduced waste</li>
+              <li>X number of defects were addressed</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/">Back to Homepage</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%= require('html-loader!./partials/home/footer.html') %>
+
+</body>
+</html>
