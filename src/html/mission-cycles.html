@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | Mission Cycles</title>
+
+  <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+</head>
+<body class="text-secondary">
+
+  <%= require('html-loader!./partials/navigation.html') %>
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <header class="text-center text-white">
+      <h1 class="display-4 text-primary">Mission Cycles</h1>
+    </header>
+
+    <div class="row py-5">
+      <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+        <p class="font-weight-light">
+          Mission Cycles are fragments of time where the progress of Missions is
+          evaluated and decisions are made. Mission Cycles are the equivalent to Sprints in Scrum.
+        </p>
+        <h2>Duration</h2>
+        <p class="font-weight-light">
+          The minimum duration of a Mission Cycle is 1 week. Smaller cycle times may
+          introduce waste in managing the process and too frequent to produce
+          achievable outcomes.
+        </p>
+        <p class="font-weight-light">
+          The maximum duration of a Mission Cycle is 6 weeks. Investing in bigger cycle times
+          can jeopardise the agility of an effort, where the team should be focusing
+          on producing frequent results that can be evaluated through short iterations.
+        </p>
+
+        <h2>Ceremonies</h2>
+        <p class="font-weight-light">
+          Agile Squads define only two ceremonies, leaving the freedom
+          for more, based on the self-organizing nature of the Squads or company structures.
+        </p>
+        <p class="font-weight-light">
+          The first ceremony is the Mission Briefing, taking place at the beginning of a
+          Mission Cycle. During the briefing session, the Product Squad holds a presentation to the
+          cycle's new Missions and/or a status update of existing Missions that need to
+          expand to the next cycle, until the expected outcome is met.
+          At the end of the Briefing session, Hero and Guardian Squads must be formed or
+          restructured based on the current situation.
+        </p>
+        <p class="font-weight-light">
+          The second ceremony is the Mission Debriefing, taking place at the end of a Cycle.
+          During the debriefing session, Squads share their progress, discuss about important
+          findings from their journey and communicate any important information that can be used as a
+          pre-work for the next Cycle.
+        </p>
+
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/">Back to Homepage</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%= require('html-loader!./partials/home/footer.html') %>
+
+</body>
+</html>

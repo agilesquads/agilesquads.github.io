@@ -64,6 +64,10 @@ const config = {
       template: './src/html/outcome-vs-output.html',
       filename: 'outcome-vs-output/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/html/mission-cycles.html',
+      filename: 'mission-cycles/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
