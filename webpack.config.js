@@ -68,6 +68,18 @@ const config = {
       template: './src/html/mission-cycles.html',
       filename: 'mission-cycles/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/html/missions.html',
+      filename: 'missions/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/hero-squads.html',
+      filename: 'hero-squads/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/guardian-squad.html',
+      filename: 'guardian-squad/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',

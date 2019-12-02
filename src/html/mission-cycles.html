@@ -7,6 +7,8 @@
   <title>Agile Squads | Mission Cycles</title>
 
   <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+
+  <%= require('html-loader!./partials/ga.html') %>
 </head>
 <body class="text-secondary">
 
@@ -18,11 +20,12 @@
     </header>
 
     <div class="row py-5">
-      <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
         <p class="font-weight-light">
           Mission Cycles are fragments of time where the progress of Missions is
           evaluated and decisions are made. Mission Cycles are the equivalent to Sprints in Scrum.
         </p>
+
         <h2>Duration</h2>
         <p class="font-weight-light">
           The minimum duration of a Mission Cycle is 1 week. Smaller cycle times may
@@ -62,7 +65,7 @@
     </div>
   </div>
 
-  <%= require('html-loader!./partials/home/footer.html') %>
+  <%= require('html-loader!./partials/footer.html') %>
 
 </body>
 </html>

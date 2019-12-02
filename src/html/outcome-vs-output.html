@@ -7,6 +7,8 @@
   <title>Agile Squads | Outcome vs Output</title>
 
   <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+
+  <%= require('html-loader!./partials/ga.html') %>
 </head>
 <body class="text-secondary">
 
@@ -18,7 +20,7 @@
     </header>
 
     <div class="row py-5">
-      <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
         <h1>Preface</h1>
         <p class="font-weight-light">
           What are the KPIs we should measure for a team to be considered successful?
@@ -93,7 +95,7 @@
     </div>
   </div>
 
-  <%= require('html-loader!./partials/home/footer.html') %>
+  <%= require('html-loader!./partials/footer.html') %>
 
 </body>
 </html>

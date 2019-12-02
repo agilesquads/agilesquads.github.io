@@ -26,6 +26,7 @@
   <meta property="og:description" content="Agile Squads is an open-source Agile framework for small to medium teams building software" />
   <meta property="og:image" content="https://agilesquads.org/<%= require('../assets/fb-share.png') %>" />
 
+  <%= require('html-loader!./partials/ga.html') %>
 </head>
 <body class="text-secondary">
 
@@ -36,7 +37,7 @@
   <%= require('html-loader!./partials/home/values.html') %>
   <%= require('html-loader!./partials/home/about.html') %>
   <%= require('html-loader!./partials/home/whoisusing.html') %>
-  <%= require('html-loader!./partials/home/footer.html') %>
+  <%= require('html-loader!./partials/footer.html') %>
 
 </body>
 </html>
