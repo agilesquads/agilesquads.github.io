@@ -80,6 +80,10 @@ const config = {
       template: './src/html/guardian-squad.html',
       filename: 'guardian-squad/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/html/hexagon-trifecta.html',
+      filename: 'hexagon-trifecta/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',

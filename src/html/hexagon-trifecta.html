@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | The Hexagon Trifecta</title>
+
+  <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+
+  <%= require('html-loader!./partials/ga.html') %>
+</head>
+<body class="text-secondary">
+
+  <%= require('html-loader!./partials/navigation.html') %>
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <header class="text-center text-white">
+      <h1 class="display-4 text-primary">The Hexagon Trifecta</h1>
+    </header>
+
+    <div class="row py-5">
+      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+        <p>
+          The Hexagon Trifecta is the ritualistic symbol that represents the Agile Squads
+          framework and the core concepts behind it.
+        </p>
+
+        <img class="w-100" src="<%= require('../assets/hexagon-open.svg') %>">
+
+        <p>
+          The triangular outline represents the balance and how all forces must be
+          equal contributing to a purpose in order to succeed. Every member, every skill,
+          counts.
+        </p>
+
+        <p>
+          When the triangle expands, a hexagon is revealed at the core. The hexagon
+          represents the core values of the framework, that glues the three Squads together.
+          Without those values, the framework collapses and fails.
+        </p>
+
+        <p>
+          At the center, lies the finite nature of the cycle. The cycle is the heartbeat
+          and all efforts are aligned around short intervals, short deliverables and quick
+          reaction to adaptation.
+        </p>
+
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/">Back to Homepage</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%= require('html-loader!./partials/footer.html') %>
+
+</body>
+</html>
