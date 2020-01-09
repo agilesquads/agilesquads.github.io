@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | <%= htmlWebpackPlugin.options.title %></title>
+
+  <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+
+  <%= require('html-loader!./partials/ga.html') %>
+</head>
+<body class="text-secondary">
+
+  <%= require('html-loader!./partials/navigation.html') %>
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <div class="row py-5">
+      <div class="col-2 text-right">
+        <p><img class="w-50" src="<%= require('../assets/' + htmlWebpackPlugin.options.avatar) %>"></p>
+        <p><small>
+          <span class="font-weight-bold">Created by</span><br>
+          <%= htmlWebpackPlugin.options.author %>
+        </small></p>
+
+        <p><small>
+          <span class="font-weight-bold">Last update</span><br>
+          <%= htmlWebpackPlugin.options.last_updated %>
+        </small></p>
+
+      </div>
+      <div class="col-10">
+        <h1><%= htmlWebpackPlugin.options.title %></h1>
+        <small>Summary</small>
+        <hr class="as-divider mt-0">
+        <p>
+          <%= htmlWebpackPlugin.options.summary %>
+        </p>
+        <small>Description</small>
+        <hr class="as-divider mt-0">
+        <p>
+          <%= htmlWebpackPlugin.options.description %>
+        </p>
+      </div>
+    </div>
+
+    <div class="row py-5">
+      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/addons">Back to Addons</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <%= require('html-loader!./partials/footer.html') %>
+
+</body>
+</html>

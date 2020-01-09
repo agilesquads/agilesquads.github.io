@@ -1,9 +1,21 @@
+const _ = require('lodash');
+const fs = require('fs');
+const moment = require('moment');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const { Remarkable } = require('remarkable');
+
+const md = new Remarkable();
+
+function getDirectories(path) {
+  return fs.readdirSync(path).filter(function (file) {
+    return fs.statSync(path+'/'+file).isDirectory();
+  });
+}
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -93,5 +105,45 @@ const config = {
     ]),
   ],
 };
+
+// read add-ons from addons folder
+const addons = getDirectories('./src/addons');
+const addons_directory = [];
+_.each(addons, slug => {
+  const manifest = require(`./src/addons/${slug}/manifest.json`);
+
+  const summary = md.render(
+    fs.readFileSync(`./src/addons/${slug}/summary.md`, 'utf8'));
+  const description = md.render(
+    fs.readFileSync(`./src/addons/${slug}/description.md`, 'utf8'));
+
+  const last_updated = moment(manifest.last_updated).format('LL');
+
+  config.plugins.push(new HtmlWebpackPlugin({
+    template: './src/html/addon_template.html',
+    filename: `addons/${slug}/index.html`,
+    title: manifest.title,
+    author: manifest.author.name,
+    avatar: manifest.author.avatar,
+    last_updated,
+    summary,
+    description,
+  }));
+
+  addons_directory.push({
+    title: manifest.title,
+    author: manifest.author.name,
+    summary,
+    last_updated,
+    link: `addons/${slug}`,
+  });
+});
+
+// add generic addons page
+config.plugins.push(new HtmlWebpackPlugin({
+  template: './src/html/addons.html',
+  filename: `addons/index.html`,
+  addons: addons_directory,
+}));
 
 module.exports = config;

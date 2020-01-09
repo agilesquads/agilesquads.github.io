@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | Addons</title>
+
+  <link rel="shortcut icon" href="<%= require('../assets/favicon.png') %>" type="image/png"/>
+
+  <%= require('html-loader!./partials/ga.html') %>
+</head>
+<body class="text-secondary">
+
+  <%= require('html-loader!./partials/navigation.html') %>
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <header class="text-center text-white">
+      <h1 class="display-4 text-primary">Addons</h1>
+    </header>
+
+    <div class="row">
+  <% htmlWebpackPlugin.options.addons.forEach(function(addon){ %>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card as-card h-100">
+          <div class="card-body">
+            <div class="card-title">
+              <h4 class="text-primary"><%= addon.title %></h4>
+              <small>by <%= addon.author %></small>
+            </div>
+            <p class="card-text text-secondary font-weight-light">
+              <%= addon.summary %>
+            </p>
+            <a href="<%= addon.link %>" class="stretched-link">learn more</a>
+          </div>
+        </div>
+      </div>
+  <% }); %>
+    </div>
+
+    <div class="row py-5">
+      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/">Back to Homepage</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%= require('html-loader!./partials/footer.html') %>
+
+</body>
+</html>
