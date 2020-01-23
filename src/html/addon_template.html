@@ -31,12 +31,10 @@
       </div>
       <div class="col-10">
         <h1><%= htmlWebpackPlugin.options.title %></h1>
-        <small>Summary</small>
-        <hr class="as-divider mt-0">
         <p>
-          <%= htmlWebpackPlugin.options.summary %>
+          <i><%= htmlWebpackPlugin.options.summary %></i>
         </p>
-        <small>Description</small>
+        <h5>Description</h5>
         <hr class="as-divider mt-0">
         <p>
           <%= htmlWebpackPlugin.options.description %>
@@ -44,8 +42,8 @@
       </div>
     </div>
 
-    <div class="row py-5">
-      <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+    <div class="row">
+      <div class="col-12">
         <p class="text-center">
           <a class="btn btn-outline-primary font-weight-light" href="/addons">Back to Addons</a>
         </p>
