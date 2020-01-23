@@ -135,7 +135,7 @@ _.each(addons, slug => {
     author: manifest.author.name,
     summary,
     last_updated,
-    link: `addons/${slug}`,
+    link: `/addons/${slug}`,
   });
 });
 
