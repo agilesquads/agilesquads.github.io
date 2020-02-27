@@ -1,6 +1,6 @@
 Defining and clearly communicating a mission has some challenges around finding the correct balance of information to keep people interested and educated, yet not overwhelmed and feeling bored. This addon provides a template to address these issues.
 
-You can grab a copy of the template [here](https://docs.google.com/presentation/d/1RRuC1f7szBIXwW3W-q5VEqcnJ-vYEHwQ1cEtr009Ys4/edit?usp=sharing)
+You can get a copy of the template [here](https://docs.google.com/presentation/d/1RRuC1f7szBIXwW3W-q5VEqcnJ-vYEHwQ1cEtr009Ys4/edit?usp=sharing)
 
 #### What is included in this mission presentation?
 
@@ -23,4 +23,4 @@ Taking into account speed of agile as well as importance of lean work, the prese
 
 **IMPORTANT NOTE:** This mission presentation can act as a live document once the Hero squad starts working on the mission, specifically extending the appendix slide with more links on documents and work that the squad is producing.
 
-Grab your copy of the template [here](https://docs.google.com/presentation/d/1RRuC1f7szBIXwW3W-q5VEqcnJ-vYEHwQ1cEtr009Ys4/edit?usp=sharing)
+Get your copy of the template [here](https://docs.google.com/presentation/d/1RRuC1f7szBIXwW3W-q5VEqcnJ-vYEHwQ1cEtr009Ys4/edit?usp=sharing)
