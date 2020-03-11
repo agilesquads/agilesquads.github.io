@@ -9,7 +9,7 @@ to help everybody understand the importance of this mission.
 
 In detail the presentation includes:
 * An introduction on the mission's topic and prioritized goals with a short description of the problem that each goal is addressing
-* A dedicated slide for the problem definition
+* A problem definition slide
 * A high level list for affected users/customers, open questions and success metrics
 * A dedicated slide on the mission's value
 * A definition for the mission end, containing release items and post-release actions
