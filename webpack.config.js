@@ -9,7 +9,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { Remarkable } = require('remarkable');
 
-const md = new Remarkable();
+const md = new Remarkable({
+  html: true,
+});
 
 function getDirectories(path) {
   return fs.readdirSync(path).filter(function (file) {
