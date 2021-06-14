@@ -1,0 +1,1 @@
+Improve ownership and accountability of work through small, yet flexible, fixed teams in the Engineering talent pool.
