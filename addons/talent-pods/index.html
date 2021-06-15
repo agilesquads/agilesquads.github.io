@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Agile Squads | Talent pods</title>
+
+  <link rel="shortcut icon" href="/a36011ef1ade4f75304abca800692572.png" type="image/png"/>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153713087-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153713087-1');
+</script>
+<link href="/index.46928ad2a0f1b1c8b666.css" rel="stylesheet"></head>
+<body class="text-secondary">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Agile Squads</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#quick-starting-guide">Guides</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle as-no-outline" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-hasopup="true" aria-expanded="false">
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/outcome-vs-output">Outcome vs Output</a>
+            <a class="dropdown-item" href="https://youtu.be/KB95k0Y9Tsc" target="_blank">Guest Leadership</a>
+            <a class="dropdown-item" href="/missions">Missions</a>
+            <a class="dropdown-item" href="/hero-squads">Hero Squads</a>
+            <a class="dropdown-item" href="/guardian-squad">Guardian Squad</a>
+            <a class="dropdown-item" href="/mission-cycles">Mission Cycles</a>
+            <a class="dropdown-item" href="/hexagon-trifecta">The Hexagon Trifecta</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/addons">Addons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/agilesquads/agilesquads.github.io" target="_blank"><img src="/17acc6519c344c777f7d9449a460b16c.svg" alt="Github repo"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container py-5 mt-5 font-weight-light">
+    <div class="row py-5">
+      <div class="col-2 text-right">
+        <p><img class="w-50" src="/9bab111ff30aea85f8ef14a61e84c43c.jpg"></p>
+        <p><small>
+          <span class="font-weight-bold">Created by</span><br>
+          Nikos Vasileiou
+        </small></p>
+
+        <p><small>
+          <span class="font-weight-bold">Last update</span><br>
+          June 14, 2021
+        </small></p>
+
+      </div>
+      <div class="col-10">
+        <h1>Talent pods</h1>
+        <p>
+          <i><p>Improve ownership and accountability of work through small, yet flexible, fixed teams in the Engineering talent pool.</p>
+</i>
+        </p>
+        <h5>Description</h5>
+        <hr class="as-divider mt-0">
+        <p>
+          <p>Formating Hero Squads on per Mission scope works great for maximum flexibility and optimal allocation in the Engineering talent pool. However, over time, this can lead to some inherent drawbacks:</p>
+<ul>
+<li>Lack of ownership of developed features or components.</li>
+<li>Lack of continuous improvement through retrospectives and follow-up action items.</li>
+<li>Less transparency and more challenging work on the management side to help individuals grow and get better in their role.</li>
+</ul>
+<p>This add-on introduces the idea of <strong>Talent pod</strong>, a more concrete, yet flexible team, in the ecosystem of the Talent pool.</p>
+<h4>What is a Talent pod?</h4>
+<ul>
+<li>A team of 3 or more Engineers that, <strong>by default</strong>, stay together for a long time.</li>
+<li>Flexible enough team to lend people here and there, <strong>if needed</strong>, to assist on running missions, returning back to their home team when and if they are no longer needed elsewhere.</li>
+<li>Contributors to the Guardian Squad, either as a whole or as individual contributors across pods.</li>
+</ul>
+<p>A Talent pod can exercise component or feature ownership. If they
+have worked on feature A, the probability of working on the next version of the
+same feature is much higher, leading to better and faster development cycles.</p>
+<p>Talent pods foster more meaningful continuous improvement ceremonies and
+better bonding among members.</p>
+<p>To highlight the key differences from the default Squad formation of Agile Squads framework, here is how a Talent pool is looking without pods:</p>
+<pre><code> Talent Pool (no pods)
+|-----|-----|-----|-----|-----|
+| E1  | E2  | E3  | E4  | E5  |
+|-----|-----|-----|-----|-----|
+| E6  | E7  | E8  | E9  | E10 |
+|-----|-----|-----|-----|-----|
+| E11 | E12 | E13 | E14 | E15 |
+|-----|-----|-----|-----|-----|
+| E16 | E17 | E18 | E19 | E20 |
+|-----|-----|-----|-----|-----|
+</code></pre>
+<p>With Talent pods, the Talend pool is becoming a pool of teams instead of
+individual contributors:</p>
+<pre><code> Talent Pool (with Pods)
+|------|------|------|------|------|
+| POD1 | POD2 | POD3 | POD4 | POD5 |
+|--^---|--^---|--^---|--^---|--^---|
+| E1   | E5   | E9   | E13  | E17  |
+| E2   | E6   | E10  | E14  | E18  |
+| E3   | E7   | E11  | E15  | E19  |
+| E4   | E8   | E12  | E16  | E20  |
+|------|------|------|------|------|
+</code></pre>
+<p>During a cycle, Hero Squads and the Guardian Squad are formed on a pod (or multiple pods) level:</p>
+<pre><code>|------------|------------|------------|-----------|
+| Hero Squad | Hero Squad | Hero Squad | Guardians |
+|------------|------------|------------|-----------|
+| POD1, POD3 | POD2       | POD5       | POD4      |
+|------------|------------|------------|-----------|
+</code></pre>
+<p>An alternative scheme for Guardian Squad allocation is to &quot;borrow&quot; members from
+various pods:</p>
+<pre><code>|------------|------------|------------|-------------|
+| Hero Squad | Hero Squad | Hero Squad | Guardians   |
+|------------|------------|------------|-------------|
+| POD1, POD3 | POD2       | POD5, POD4 | E1, E7, E20 |
+|------------|------------|------------|-------------|
+</code></pre>
+<p>As a general rule, a Talent pod can keep its member for a long time. However a good practice would be to rebuild pods, maybe once or twice a year,
+to create diversity, knowledge sharing and new people dynamics.</p>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center">
+          <a class="btn btn-outline-primary font-weight-light" href="/addons">Back to Addons</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="pt-5 pb-3 as-card">
+
+  <div class="container text-left">
+    <div class="row">
+      <div class="col">
+        <p>Links</p>
+        <ul class="list-unstyled">
+          <li><a href="https://heartofagile.com" target="_blank"><small>Heart of Agile</small></a></li>
+          <li><a href="http://modernagile.org" target="_blank"><small>Modern Agile</small></a></li>
+          <li><a href="https://youtu.be/KB95k0Y9Tsc" target="_blank"><small>Guest Leadership</small></a></li>
+          <li><a href="https://github.com/agilesquads/agilesquads.github.io" target="_blank"><small>Open source</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <p>Resources</p>
+        <ul class="list-unstyled">
+          <li><a href="/outcome-vs-output"><small>Outcome vs Output</small></a></li>
+          <li><a href="/hexagon-trifecta"><small>The Hexagon Trifecta</small></a></li>
+          <li><a href="/addons"><small>Addons</small></a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <p>Guides</p>
+        <ul class="list-unstyled">
+          <li><a href="/missions"><small>Missions</small></a></li>
+          <li><a href="/mission-cycles"><small>Mission Cycles</small></a></li>
+          <li><a href="/hero-squads"><small>Hero Squads</small></a></li>
+          <li><a href="/guardian-squad"><small>Guardian Squad</small></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-2 text-center">
+    <small>agilesquads.org</small>
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="/js/index.min.js"></script></body>
+</html>
