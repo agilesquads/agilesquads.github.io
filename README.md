@@ -33,4 +33,5 @@ Use markdown to enrich the description file.
 
 ## Deployment
 
-Agile Squads website is using Github Actions for deployment. Merging PRs to `devel` branch will run `npm run build` and deploy the `dist` folder to `master` branch, which will be served through Github Pages.
+Agile Squads website is using Github Actions for deployment.
+Merging PRs to `devel` branch will run `npm run build` and deploy the `dist` folder to `master` branch, which will be served through Github Pages.
