@@ -42,10 +42,10 @@ jeopardise the feasibility, the scope and the effort of the project early on.
 This is the last phase of the shaping process, where a document is created to pitch
 the project. Key elements of the pitching document are:
 
-1. Problem: Description of the problem, the idea, the use case
-2. Appetite: How much time we want to spend and the constrains of the solution
-3. Solution: Core elements of the solution presentable in a form simple to understand
-4. Rabbit holes: Details worth calling out to avoid problems
-5. No-gos: Items excluded from the concept
+1. **Problem**: Description of the problem, the idea, the use case
+2. **Appetite**: How much time we want to spend and the constrains of the solution
+3. **Solution**: Core elements of the solution presentable in a form simple to understand
+4. **Rabbit holes**: Details worth calling out to avoid problems
+5. **No-gos**: Items excluded from the concept
 
 More at [Shape Up](https://basecamp.com/shapeup) book.

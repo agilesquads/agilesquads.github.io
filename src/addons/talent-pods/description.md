@@ -9,10 +9,10 @@ This add-on introduces the idea of **Talent pod**, a more concrete, yet flexible
 #### What is a Talent pod?
 
 - A team of 3 or more Engineers that, **by default**, stay together for a long time.
-- Flexible enough team to lend people here and there, **if needed**, to assist on running missions, returning back to their home team when and if they are no longer needed elsewhere.
+- Flexible enough team to lend people here and there, **if needed**, to assist on running missions, returning back to their home team when and if no longer needed elsewhere.
 - Contributors to the Guardian Squad, either as a whole or as individual contributors across pods.
 
-A Talent pod can exercise component or feature ownership. If they
+A Talent pod can exercise component and feature ownership. If they
 have worked on feature A, the probability of working on the next version of the
 same feature is much higher, leading to better and faster development cycles.
 
