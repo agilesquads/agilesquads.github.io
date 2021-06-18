@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/agilesquads/agilesquads.github.io.svg?branch=devel)](https://travis-ci.org/agilesquads/agilesquads.github.io)
+[![Build Status](https://travis-ci.com/agilesquads/agilesquads.github.io.svg?branch=devel)](https://travis-ci.com/agilesquads/agilesquads.github.io)
 
 # Agile Squads
 ## The liberating agile framework for mature software teams
